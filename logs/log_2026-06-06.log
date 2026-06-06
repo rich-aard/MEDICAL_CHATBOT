@@ -1,0 +1,386 @@
+2026-06-06 15:25:27,935 - __main__ - INFO - Creating vectorstore.
+2026-06-06 15:25:27,935 - app.components.loader - INFO - Initializing Document Loader for directory: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\raw_documents
+2026-06-06 15:26:13,806 - app.components.loader - INFO - Successfully loaded 1984 documents.
+2026-06-06 15:26:13,807 - app.components.loader - INFO - Found 1984 documents.
+2026-06-06 15:26:14,229 - app.components.loader - INFO - Created 8404 chunks.
+2026-06-06 15:26:14,229 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 15:26:22,855 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 15:26:22,855 - app.components.vector_store - INFO - Initializing baseline FAISS index with first batch of 64 chunks...
+2026-06-06 15:26:49,872 - app.components.vector_store - INFO - Processing remaining chunks sequentially in batches of 64...
+2026-06-06 15:27:07,262 - app.components.vector_store - INFO - Embedded up to chunk index: 128/8404
+2026-06-06 15:27:24,183 - app.components.vector_store - INFO - Embedded up to chunk index: 192/8404
+2026-06-06 15:27:38,876 - app.components.vector_store - INFO - Embedded up to chunk index: 256/8404
+2026-06-06 15:27:54,309 - app.components.vector_store - INFO - Embedded up to chunk index: 320/8404
+2026-06-06 15:28:11,055 - app.components.vector_store - INFO - Embedded up to chunk index: 384/8404
+2026-06-06 15:28:27,952 - app.components.vector_store - INFO - Embedded up to chunk index: 448/8404
+2026-06-06 15:28:44,393 - app.components.vector_store - INFO - Embedded up to chunk index: 512/8404
+2026-06-06 15:28:59,580 - app.components.vector_store - INFO - Embedded up to chunk index: 576/8404
+2026-06-06 15:29:21,982 - app.components.vector_store - INFO - Embedded up to chunk index: 640/8404
+2026-06-06 15:29:40,176 - app.components.vector_store - INFO - Embedded up to chunk index: 704/8404
+2026-06-06 15:30:03,690 - app.components.vector_store - INFO - Embedded up to chunk index: 768/8404
+2026-06-06 15:30:23,024 - app.components.vector_store - INFO - Embedded up to chunk index: 832/8404
+2026-06-06 15:30:45,480 - app.components.vector_store - INFO - Embedded up to chunk index: 896/8404
+2026-06-06 15:31:08,092 - app.components.vector_store - INFO - Embedded up to chunk index: 960/8404
+2026-06-06 15:31:33,321 - app.components.vector_store - INFO - Embedded up to chunk index: 1024/8404
+2026-06-06 15:31:59,324 - app.components.vector_store - INFO - Embedded up to chunk index: 1088/8404
+2026-06-06 15:32:24,542 - app.components.vector_store - INFO - Embedded up to chunk index: 1152/8404
+2026-06-06 15:32:51,895 - app.components.vector_store - INFO - Embedded up to chunk index: 1216/8404
+2026-06-06 15:33:13,421 - app.components.vector_store - INFO - Embedded up to chunk index: 1280/8404
+2026-06-06 15:33:27,091 - app.components.vector_store - INFO - Embedded up to chunk index: 1344/8404
+2026-06-06 15:33:41,680 - app.components.vector_store - INFO - Embedded up to chunk index: 1408/8404
+2026-06-06 15:33:52,718 - app.components.vector_store - INFO - Embedded up to chunk index: 1472/8404
+2026-06-06 15:34:05,295 - app.components.vector_store - INFO - Embedded up to chunk index: 1536/8404
+2026-06-06 15:34:17,487 - app.components.vector_store - INFO - Embedded up to chunk index: 1600/8404
+2026-06-06 15:34:29,290 - app.components.vector_store - INFO - Embedded up to chunk index: 1664/8404
+2026-06-06 15:34:42,796 - app.components.vector_store - INFO - Embedded up to chunk index: 1728/8404
+2026-06-06 15:34:54,185 - app.components.vector_store - INFO - Embedded up to chunk index: 1792/8404
+2026-06-06 15:35:05,865 - app.components.vector_store - INFO - Embedded up to chunk index: 1856/8404
+2026-06-06 15:35:17,453 - app.components.vector_store - INFO - Embedded up to chunk index: 1920/8404
+2026-06-06 15:35:36,381 - app.components.vector_store - INFO - Embedded up to chunk index: 1984/8404
+2026-06-06 15:35:55,010 - app.components.vector_store - INFO - Embedded up to chunk index: 2048/8404
+2026-06-06 15:36:17,079 - app.components.vector_store - INFO - Embedded up to chunk index: 2112/8404
+2026-06-06 15:36:40,039 - app.components.vector_store - INFO - Embedded up to chunk index: 2176/8404
+2026-06-06 15:37:04,262 - app.components.vector_store - INFO - Embedded up to chunk index: 2240/8404
+2026-06-06 15:37:31,684 - app.components.vector_store - INFO - Embedded up to chunk index: 2304/8404
+2026-06-06 15:37:49,378 - app.components.vector_store - INFO - Embedded up to chunk index: 2368/8404
+2026-06-06 15:38:01,289 - app.components.vector_store - INFO - Embedded up to chunk index: 2432/8404
+2026-06-06 15:38:12,434 - app.components.vector_store - INFO - Embedded up to chunk index: 2496/8404
+2026-06-06 15:38:23,133 - app.components.vector_store - INFO - Embedded up to chunk index: 2560/8404
+2026-06-06 15:38:34,493 - app.components.vector_store - INFO - Embedded up to chunk index: 2624/8404
+2026-06-06 15:38:45,436 - app.components.vector_store - INFO - Embedded up to chunk index: 2688/8404
+2026-06-06 15:38:56,658 - app.components.vector_store - INFO - Embedded up to chunk index: 2752/8404
+2026-06-06 15:39:07,914 - app.components.vector_store - INFO - Embedded up to chunk index: 2816/8404
+2026-06-06 15:39:18,604 - app.components.vector_store - INFO - Embedded up to chunk index: 2880/8404
+2026-06-06 15:39:31,764 - app.components.vector_store - INFO - Embedded up to chunk index: 2944/8404
+2026-06-06 15:39:42,659 - app.components.vector_store - INFO - Embedded up to chunk index: 3008/8404
+2026-06-06 15:39:53,501 - app.components.vector_store - INFO - Embedded up to chunk index: 3072/8404
+2026-06-06 15:40:04,378 - app.components.vector_store - INFO - Embedded up to chunk index: 3136/8404
+2026-06-06 15:40:15,442 - app.components.vector_store - INFO - Embedded up to chunk index: 3200/8404
+2026-06-06 15:40:27,181 - app.components.vector_store - INFO - Embedded up to chunk index: 3264/8404
+2026-06-06 15:40:37,772 - app.components.vector_store - INFO - Embedded up to chunk index: 3328/8404
+2026-06-06 15:40:48,292 - app.components.vector_store - INFO - Embedded up to chunk index: 3392/8404
+2026-06-06 15:40:59,077 - app.components.vector_store - INFO - Embedded up to chunk index: 3456/8404
+2026-06-06 15:41:11,547 - app.components.vector_store - INFO - Embedded up to chunk index: 3520/8404
+2026-06-06 15:41:21,887 - app.components.vector_store - INFO - Embedded up to chunk index: 3584/8404
+2026-06-06 15:41:32,841 - app.components.vector_store - INFO - Embedded up to chunk index: 3648/8404
+2026-06-06 15:41:44,653 - app.components.vector_store - INFO - Embedded up to chunk index: 3712/8404
+2026-06-06 15:41:55,782 - app.components.vector_store - INFO - Embedded up to chunk index: 3776/8404
+2026-06-06 15:42:06,914 - app.components.vector_store - INFO - Embedded up to chunk index: 3840/8404
+2026-06-06 15:42:18,812 - app.components.vector_store - INFO - Embedded up to chunk index: 3904/8404
+2026-06-06 15:42:30,826 - app.components.vector_store - INFO - Embedded up to chunk index: 3968/8404
+2026-06-06 15:42:42,399 - app.components.vector_store - INFO - Embedded up to chunk index: 4032/8404
+2026-06-06 15:42:53,846 - app.components.vector_store - INFO - Embedded up to chunk index: 4096/8404
+2026-06-06 15:43:05,012 - app.components.vector_store - INFO - Embedded up to chunk index: 4160/8404
+2026-06-06 15:43:16,019 - app.components.vector_store - INFO - Embedded up to chunk index: 4224/8404
+2026-06-06 15:43:29,694 - app.components.vector_store - INFO - Embedded up to chunk index: 4288/8404
+2026-06-06 15:43:41,475 - app.components.vector_store - INFO - Embedded up to chunk index: 4352/8404
+2026-06-06 15:43:52,391 - app.components.vector_store - INFO - Embedded up to chunk index: 4416/8404
+2026-06-06 15:44:05,909 - app.components.vector_store - INFO - Embedded up to chunk index: 4480/8404
+2026-06-06 15:44:18,537 - app.components.vector_store - INFO - Embedded up to chunk index: 4544/8404
+2026-06-06 15:44:29,970 - app.components.vector_store - INFO - Embedded up to chunk index: 4608/8404
+2026-06-06 15:44:40,600 - app.components.vector_store - INFO - Embedded up to chunk index: 4672/8404
+2026-06-06 15:44:52,084 - app.components.vector_store - INFO - Embedded up to chunk index: 4736/8404
+2026-06-06 15:45:04,407 - app.components.vector_store - INFO - Embedded up to chunk index: 4800/8404
+2026-06-06 15:45:16,174 - app.components.vector_store - INFO - Embedded up to chunk index: 4864/8404
+2026-06-06 15:45:32,662 - app.components.vector_store - INFO - Embedded up to chunk index: 4928/8404
+2026-06-06 15:45:54,705 - app.components.vector_store - INFO - Embedded up to chunk index: 4992/8404
+2026-06-06 15:46:11,559 - app.components.vector_store - INFO - Embedded up to chunk index: 5056/8404
+2026-06-06 15:46:24,848 - app.components.vector_store - INFO - Embedded up to chunk index: 5120/8404
+2026-06-06 15:46:42,472 - app.components.vector_store - INFO - Embedded up to chunk index: 5184/8404
+2026-06-06 15:46:56,672 - app.components.vector_store - INFO - Embedded up to chunk index: 5248/8404
+2026-06-06 15:47:11,689 - app.components.vector_store - INFO - Embedded up to chunk index: 5312/8404
+2026-06-06 15:47:24,375 - app.components.vector_store - INFO - Embedded up to chunk index: 5376/8404
+2026-06-06 15:47:40,893 - app.components.vector_store - INFO - Embedded up to chunk index: 5440/8404
+2026-06-06 15:47:57,353 - app.components.vector_store - INFO - Embedded up to chunk index: 5504/8404
+2026-06-06 15:48:10,671 - app.components.vector_store - INFO - Embedded up to chunk index: 5568/8404
+2026-06-06 15:48:25,044 - app.components.vector_store - INFO - Embedded up to chunk index: 5632/8404
+2026-06-06 15:48:37,925 - app.components.vector_store - INFO - Embedded up to chunk index: 5696/8404
+2026-06-06 15:48:54,654 - app.components.vector_store - INFO - Embedded up to chunk index: 5760/8404
+2026-06-06 15:49:09,972 - app.components.vector_store - INFO - Embedded up to chunk index: 5824/8404
+2026-06-06 15:49:24,040 - app.components.vector_store - INFO - Embedded up to chunk index: 5888/8404
+2026-06-06 15:49:42,294 - app.components.vector_store - INFO - Embedded up to chunk index: 5952/8404
+2026-06-06 15:50:00,309 - app.components.vector_store - INFO - Embedded up to chunk index: 6016/8404
+2026-06-06 15:50:16,203 - app.components.vector_store - INFO - Embedded up to chunk index: 6080/8404
+2026-06-06 15:50:30,065 - app.components.vector_store - INFO - Embedded up to chunk index: 6144/8404
+2026-06-06 15:50:44,972 - app.components.vector_store - INFO - Embedded up to chunk index: 6208/8404
+2026-06-06 15:50:59,514 - app.components.vector_store - INFO - Embedded up to chunk index: 6272/8404
+2026-06-06 15:51:12,992 - app.components.vector_store - INFO - Embedded up to chunk index: 6336/8404
+2026-06-06 15:51:25,155 - app.components.vector_store - INFO - Embedded up to chunk index: 6400/8404
+2026-06-06 15:51:38,324 - app.components.vector_store - INFO - Embedded up to chunk index: 6464/8404
+2026-06-06 15:51:52,934 - app.components.vector_store - INFO - Embedded up to chunk index: 6528/8404
+2026-06-06 15:52:07,540 - app.components.vector_store - INFO - Embedded up to chunk index: 6592/8404
+2026-06-06 15:52:21,626 - app.components.vector_store - INFO - Embedded up to chunk index: 6656/8404
+2026-06-06 15:52:34,414 - app.components.vector_store - INFO - Embedded up to chunk index: 6720/8404
+2026-06-06 15:52:47,992 - app.components.vector_store - INFO - Embedded up to chunk index: 6784/8404
+2026-06-06 15:53:02,586 - app.components.vector_store - INFO - Embedded up to chunk index: 6848/8404
+2026-06-06 15:53:16,525 - app.components.vector_store - INFO - Embedded up to chunk index: 6912/8404
+2026-06-06 15:53:30,863 - app.components.vector_store - INFO - Embedded up to chunk index: 6976/8404
+2026-06-06 15:53:44,009 - app.components.vector_store - INFO - Embedded up to chunk index: 7040/8404
+2026-06-06 15:53:58,568 - app.components.vector_store - INFO - Embedded up to chunk index: 7104/8404
+2026-06-06 15:54:12,663 - app.components.vector_store - INFO - Embedded up to chunk index: 7168/8404
+2026-06-06 15:54:28,835 - app.components.vector_store - INFO - Embedded up to chunk index: 7232/8404
+2026-06-06 15:54:44,711 - app.components.vector_store - INFO - Embedded up to chunk index: 7296/8404
+2026-06-06 15:55:00,396 - app.components.vector_store - INFO - Embedded up to chunk index: 7360/8404
+2026-06-06 15:55:16,750 - app.components.vector_store - INFO - Embedded up to chunk index: 7424/8404
+2026-06-06 15:55:30,526 - app.components.vector_store - INFO - Embedded up to chunk index: 7488/8404
+2026-06-06 15:55:46,664 - app.components.vector_store - INFO - Embedded up to chunk index: 7552/8404
+2026-06-06 15:56:01,872 - app.components.vector_store - INFO - Embedded up to chunk index: 7616/8404
+2026-06-06 15:56:16,208 - app.components.vector_store - INFO - Embedded up to chunk index: 7680/8404
+2026-06-06 15:56:32,044 - app.components.vector_store - INFO - Embedded up to chunk index: 7744/8404
+2026-06-06 15:56:49,823 - app.components.vector_store - INFO - Embedded up to chunk index: 7808/8404
+2026-06-06 15:57:03,337 - app.components.vector_store - INFO - Embedded up to chunk index: 7872/8404
+2026-06-06 15:57:18,470 - app.components.vector_store - INFO - Embedded up to chunk index: 7936/8404
+2026-06-06 15:57:33,706 - app.components.vector_store - INFO - Embedded up to chunk index: 8000/8404
+2026-06-06 15:57:48,416 - app.components.vector_store - INFO - Embedded up to chunk index: 8064/8404
+2026-06-06 15:58:02,340 - app.components.vector_store - INFO - Embedded up to chunk index: 8128/8404
+2026-06-06 15:58:19,069 - app.components.vector_store - INFO - Embedded up to chunk index: 8192/8404
+2026-06-06 15:58:34,631 - app.components.vector_store - INFO - Embedded up to chunk index: 8256/8404
+2026-06-06 15:58:49,922 - app.components.vector_store - INFO - Embedded up to chunk index: 8320/8404
+2026-06-06 15:59:04,640 - app.components.vector_store - INFO - Embedded up to chunk index: 8384/8404
+2026-06-06 15:59:09,242 - app.components.vector_store - INFO - Embedded up to chunk index: 8404/8404
+2026-06-06 15:59:09,244 - app.components.vector_store - INFO - Saving binary FAISS index assets locally to target path: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 15:59:09,373 - app.components.vector_store - INFO - Successfully generated and saved local vector store database.
+2026-06-06 20:01:44,734 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:01:44,735 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:01:44,736 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:02:06,473 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:02:06,474 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:02:07,225 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:02:07,230 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:02:07,230 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:02:08,035 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:02:08,036 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:02:08,037 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:02:08,037 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:03:16,607 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:03:23,786 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:03:23,787 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:03:23,788 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:03:33,264 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:03:33,264 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:03:33,369 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:03:33,370 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:03:33,370 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:03:33,491 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:03:33,492 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:03:33,492 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:03:33,493 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:03:41,441 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:03:47,088 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:03:47,089 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:03:47,090 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:03:56,282 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:03:56,282 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:03:56,377 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:03:56,378 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:03:56,378 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:03:56,469 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:03:56,469 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:03:56,469 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:03:56,469 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:05:32,913 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:05:39,543 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:05:39,543 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:05:39,544 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:05:48,925 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:05:48,926 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:05:49,014 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:05:49,014 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:05:49,014 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:05:49,107 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:05:49,108 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:05:49,108 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:05:49,108 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:05:49,221 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:05:54,687 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:05:54,687 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:05:54,688 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:06:05,502 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:06:05,502 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:06:05,624 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:06:05,625 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:06:05,625 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:06:05,764 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:06:05,764 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:06:05,765 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:06:05,765 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:08:14,616 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:08:21,156 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:08:21,156 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:08:21,156 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:08:30,561 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:08:30,561 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:08:30,656 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:08:30,657 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:08:30,657 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:08:30,755 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:08:30,756 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:08:30,756 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:08:30,756 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:08:30,869 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:08:36,558 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:08:36,559 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:08:36,559 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:08:46,000 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:08:46,000 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:08:46,089 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:08:46,090 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:08:46,090 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:08:46,191 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:08:46,192 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:08:46,192 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:08:46,192 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:10:42,363 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:10:52,251 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:10:52,252 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:10:52,252 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:11:02,264 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:11:02,264 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:11:02,391 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:11:02,392 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:11:02,392 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:11:02,518 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:11:02,519 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:11:02,519 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:11:02,519 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:11:04,129 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:11:13,863 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:11:13,864 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:11:13,864 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:11:23,730 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:11:23,730 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:11:23,815 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:11:23,816 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:11:23,817 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:11:23,920 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:11:23,920 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:11:23,921 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:11:23,921 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:12:17,666 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:12:23,964 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:12:23,964 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:12:23,964 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:12:33,452 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:12:33,452 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:12:33,574 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:12:33,574 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:12:33,574 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct-GGUF
+2026-06-06 20:12:33,669 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:12:33,669 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:12:33,669 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:12:33,669 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:12:56,270 - app.app - INFO - Received question from frontend framework: 'What is gastritis?
+'
+2026-06-06 20:12:57,545 - app.app - ERROR - Routing error detected: Failed to retrieve clean context validation metrics: 404 Client Error. (Request ID: Root=1-6a242e6d-263ca85c5b306510385ac67f;573d4a5d-b980-4045-a514-adb003ecb79c)
+
+Repository Not Found for url: https://huggingface.co/api/models/BioMistral/BioMistral-7B-Instruct-GGUF?expand=inferenceProviderMapping.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+2026-06-06 20:13:53,280 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:13:59,472 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:13:59,472 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:13:59,472 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:14:09,394 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:14:09,394 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:14:09,500 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:14:09,501 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:14:09,501 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B-Instruct
+2026-06-06 20:14:09,609 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:14:09,609 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:14:09,609 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:14:09,610 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:14:09,612 - app.app - INFO - Received question from frontend framework: 'What is gastritis?
+'
+2026-06-06 20:14:10,006 - app.app - ERROR - Routing error detected: Failed to retrieve clean context validation metrics: 404 Client Error. (Request ID: Root=1-6a242eb5-162ab29677a33ae868768a05;559e0aec-4adc-4f0c-b400-473fa398cfaa)
+
+Repository Not Found for url: https://huggingface.co/api/models/BioMistral/BioMistral-7B-Instruct?expand=inferenceProviderMapping.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+2026-06-06 20:14:26,353 - app.app - INFO - Received question from frontend framework: 'What is gastritis?'
+2026-06-06 20:14:26,822 - app.app - ERROR - Routing error detected: Failed to retrieve clean context validation metrics: 404 Client Error. (Request ID: Root=1-6a242ec6-3371d2443c1fcb794661e0fc;48a0cb00-e68d-415b-ac1e-e9b4a5faca82)
+
+Repository Not Found for url: https://huggingface.co/api/models/BioMistral/BioMistral-7B-Instruct?expand=inferenceProviderMapping.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+2026-06-06 20:14:56,230 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:15:01,880 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:15:01,880 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:15:01,881 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:15:11,897 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:15:11,898 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:15:12,057 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:15:12,057 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:15:12,057 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B
+2026-06-06 20:15:12,170 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:15:12,170 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:15:12,170 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:15:12,170 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:15:15,741 - app.app - INFO - Received question from frontend framework: 'What is gastritis?'
+2026-06-06 20:15:16,184 - app.app - ERROR - Routing error detected: Failed to retrieve clean context validation metrics: 
+2026-06-06 20:16:26,524 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:16:41,291 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:16:41,291 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:16:41,292 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:16:58,327 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:16:58,328 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:16:58,568 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:16:58,569 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:16:58,569 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B
+2026-06-06 20:16:58,931 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:16:58,932 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:16:58,933 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:16:58,933 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:18:14,962 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:19:00,881 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:19:00,881 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:19:00,882 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:19:12,230 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:19:12,231 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:19:12,322 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:19:12,323 - app.components.retriever - INFO - Loading Hugging Face LLM Endpoint...
+2026-06-06 20:19:12,323 - app.components.llm - INFO - Connecting to Hugging Face Endpoint for model: BioMistral/BioMistral-7B
+2026-06-06 20:19:12,460 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:19:12,461 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:19:12,461 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:19:12,461 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:19:12,573 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:24:15,735 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:24:15,735 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:24:15,735 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:24:25,225 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:24:25,225 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:24:25,315 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:24:25,316 - app.components.retriever - INFO - Loading Groq Chat model...
+2026-06-06 20:24:25,316 - app.components.llm - INFO - Initializing Groq Inference Core using model: llama-3.3-70b-versatile
+2026-06-06 20:24:26,769 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:24:26,770 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:24:26,770 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:24:26,770 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:24:32,077 - app.app - INFO - Server lifespan shutting down. Cleaning up application state...
+2026-06-06 20:24:37,656 - app.app - INFO - Server lifespan initializing. Setting up RAG engine...
+2026-06-06 20:24:37,656 - app.components.retriever - INFO - Loading vector store for QA chain...
+2026-06-06 20:24:37,656 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-06 20:24:47,574 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-06 20:24:47,574 - app.components.vector_store - INFO - Loading existing FAISS vector store from: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-06 20:24:47,673 - app.components.vector_store - INFO - FAISS vector store successfully loaded into memory.
+2026-06-06 20:24:47,674 - app.components.retriever - INFO - Loading Groq Chat model...
+2026-06-06 20:24:47,674 - app.components.llm - INFO - Initializing Groq Inference Core using model: llama-3.3-70b-versatile
+2026-06-06 20:24:47,791 - app.components.llm - INFO - Successfully established connection to the LLM endpoint.
+2026-06-06 20:24:47,792 - app.components.retriever - INFO - Combining to RAG Chain..
+2026-06-06 20:24:47,792 - app.components.retriever - INFO - RAG QA Chain created successfully.
+2026-06-06 20:24:47,792 - app.app - INFO - RAG Engine successfully cached into application state.
+2026-06-06 20:25:11,419 - app.app - INFO - Received question from frontend framework: 'What is gastritis?'
+2026-06-06 20:25:34,028 - app.app - INFO - Received question from frontend framework: 'What is appendicts?
+'
+2026-06-06 20:26:07,434 - app.app - INFO - Received question from frontend framework: 'Gastritis'
+2026-06-06 20:26:45,201 - app.app - INFO - Received question from frontend framework: 'What is ED?
+'
+2026-06-06 20:27:08,603 - app.app - INFO - Received question from frontend framework: 'migraine'
+2026-06-06 20:27:24,323 - app.app - INFO - Received question from frontend framework: 'How to treat cold?'
+2026-06-06 20:28:55,267 - app.app - INFO - Received question from frontend framework: 'What is cancer?'
+2026-06-06 20:29:06,232 - app.app - INFO - Received question from frontend framework: 'Is it possible to cure cancer?'
+2026-06-06 20:29:30,410 - app.app - INFO - Received question from frontend framework: 'Is there no mention of gastritis in the data?'
+2026-06-06 20:29:47,636 - app.app - INFO - Received question from frontend framework: 'But is it possible to answer it?'

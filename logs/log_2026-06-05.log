@@ -1,0 +1,20 @@
+2026-06-05 20:47:48,056 - __main__ - INFO - Creating vectorstore.
+2026-06-05 20:47:48,057 - app.components.loader - INFO - Initializing Document Loader for directory: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\raw_documents
+2026-06-05 20:48:25,604 - app.components.loader - INFO - Successfully loaded 1984 documents.
+2026-06-05 20:48:25,605 - app.components.loader - INFO - Found 1984 documents.
+2026-06-05 20:48:26,089 - app.components.loader - INFO - Created 8404 chunks.
+2026-06-05 20:48:26,090 - app.components.vector_store - INFO - Creating a new vector store in C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-05 20:48:26,093 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-05 20:48:26,095 - app.components.embedding - ERROR - An error occurred while loading the embedding model from Hugging Face. | Error: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\embedding.py | Line: 18
+2026-06-05 20:48:26,095 - app.components.vector_store - ERROR - Pipeline execution failed during vector store generation phase. | Error: An error occurred while loading the embedding model from Hugging Face. | Error: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\embedding.py | Line: 18 | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\vector_store.py | Line: 59
+2026-06-05 20:48:26,095 - __main__ - ERROR - Failed to process the files | Error: Pipeline execution failed during vector store generation phase. | Error: An error occurred while loading the embedding model from Hugging Face. | Error: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\embedding.py | Line: 18 | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\vector_store.py | Line: 59 | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\data_loader.py | Line: 19
+2026-06-05 20:51:43,141 - __main__ - INFO - Creating vectorstore.
+2026-06-05 20:51:43,141 - app.components.loader - INFO - Initializing Document Loader for directory: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\raw_documents
+2026-06-05 20:52:19,296 - app.components.loader - INFO - Successfully loaded 1984 documents.
+2026-06-05 20:52:19,296 - app.components.loader - INFO - Found 1984 documents.
+2026-06-05 20:52:19,445 - app.components.loader - INFO - Created 8404 chunks.
+2026-06-05 20:52:19,446 - app.components.vector_store - INFO - Creating a new vector store in C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\data\vector_store\faiss_index
+2026-06-05 20:52:19,446 - app.components.embedding - INFO - Initializing the embedding model:NeuML/pubmedbert-base-embeddings
+2026-06-05 20:52:45,164 - app.components.embedding - INFO - Successfully loaded NeuML/pubmedbert-base-embeddings from hugging face.
+2026-06-05 21:28:55,692 - app.components.vector_store - ERROR - Pipeline execution failed during vector store generation phase. | Error: FAISS.__init__() got an unexpected keyword argument 'batch_size' | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\vector_store.py | Line: 61
+2026-06-05 21:28:55,709 - __main__ - ERROR - Failed to process the files | Error: Pipeline execution failed during vector store generation phase. | Error: FAISS.__init__() got an unexpected keyword argument 'batch_size' | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\vector_store.py | Line: 61 | File: C:\Users\Ryczard\Documents\AI_OPS\Medical_RAG_Chatbot\app\components\data_loader.py | Line: 19

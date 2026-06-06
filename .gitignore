@@ -1,0 +1,25 @@
+# === Environment Secrets ===
+.env
+
+# === Python Virtual Environments ===
+.venv/
+env/
+venv/
+ENV/
+
+# === Local Data ===
+data/raw_documents/*
+!data/raw_documents/.gitkeep
+
+data/vector_store/*
+!data/vector_store/.gitkeep
+
+# === OS & System Files ===
+.DS_Store
+Thumbs.db
+
+# === Python Caches & Build Files ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
