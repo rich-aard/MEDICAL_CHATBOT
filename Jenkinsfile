@@ -9,7 +9,8 @@ pipeline {
         REGISTRY_CREDS_ID = 'docker-token' 
         REGISTRY_USER     = 'thefool23'              
         IMAGE_NAME        = 'medical-chatbot'
-        IMAGE_TAG         = "${BUILD_NUMBER}"        
+        IMAGE_TAG         = "${BUILD_NUMBER}"  
+        DOCKER_BUILDKIT   = '1'      
     }
 
     stages {
