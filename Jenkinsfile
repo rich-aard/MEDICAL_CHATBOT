@@ -23,6 +23,7 @@ pipeline {
                 )
             }
         }
+
         stage('Build Docker Image') {
             steps {
                 echo "Compiling application image: ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
@@ -39,6 +40,7 @@ pipeline {
                     sh "docker push ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
                     sh "docker push ${REGISTRY_USER}/${IMAGE_NAME}:latest"
                 }
+            } 
         }
 
         stage('Workspace Cleanup') {
