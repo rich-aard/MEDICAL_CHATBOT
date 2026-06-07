@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
 COPY pyproject.toml ./
+COPY requirements.txt ./
+ARG CACHE_BUST=v2
 
 RUN uv pip compile pyproject.toml --find-links https://download.pytorch.org/whl/cpu -o requirements.txt && \
     uv venv /app/.venv && \
