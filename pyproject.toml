@@ -17,4 +17,12 @@ dependencies = [
     "sentence-transformers>=5.5.1",
     "python-multipart>=0.0.32",
     "langchain-groq>=1.1.2",
+    "torch",
 ]
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }

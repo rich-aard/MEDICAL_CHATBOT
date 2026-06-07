@@ -23,6 +23,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
+RUN git config --global --add safe.directory "*"
+
 RUN groupadd -g 999 docker || true && \
     usermod -aG docker jenkins
 
