@@ -9,8 +9,7 @@ pipeline {
         REGISTRY_CREDS_ID = 'docker-token' 
         REGISTRY_USER     = 'thefool23'              
         IMAGE_NAME        = 'medical-chatbot'
-        IMAGE_TAG         = "${BUILD_NUMBER}"  
-        DOCKER_BUILDKIT   = '1'      
+        IMAGE_TAG         = "${BUILD_NUMBER}"     
     }
 
     stages {
@@ -38,10 +37,10 @@ pipeline {
                 echo 'Authenticating and pushing artifacts to Docker Hub...'
                 withCredentials([usernamePassword(credentialsId: "${REGISTRY_CREDS_ID}", usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                     sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
-                    sh "docker push ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
-                    sh "docker push ${REGISTRY_USER}/${IMAGE_NAME}:latest"
+                    sh "DOCKER_REGISTRY_ENABLE_OCI_FEATURES=true docker push ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
+                    sh "DOCKER_REGISTRY_ENABLE_OCI_FEATURES=true docker push ${REGISTRY_USER}/${IMAGE_NAME}:latest"
                 }
-            } 
+            }
         }
 
         stage('Workspace Cleanup') {
