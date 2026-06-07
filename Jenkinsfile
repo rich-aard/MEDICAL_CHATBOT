@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     options {
-        timeout(time: 50, unit: 'MINUTES') 
+        timeout(time: 20, unit: 'MINUTES') 
     }
 
     environment {
@@ -23,15 +23,6 @@ pipeline {
                 )
             }
         }
-
-        stage('Dependency Validation') {
-            steps {
-                echo 'Validating dependencies and locking environment using uv...'
-                sh 'uv python pin 3.12'
-                sh 'uv pip compile pyproject.toml -o requirements.txt'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 echo "Compiling application image: ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
