@@ -26,9 +26,8 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                echo "Compiling application image safely: ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
-                //REMOVED --no-cache to stop the disk deadlock
-                sh "docker build -t ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG} ."
+                echo "Compiling application image from scratch: ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
+                sh "docker build --no-cache -t ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG} ."
                 sh "docker tag ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG} ${REGISTRY_USER}/${IMAGE_NAME}:latest"
             }
         }

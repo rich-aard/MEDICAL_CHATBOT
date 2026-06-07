@@ -11,8 +11,6 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
 COPY pyproject.toml ./
 
-ARG CACHE_BUST=1
-
 RUN uv pip compile pyproject.toml --find-links https://download.pytorch.org/whl/cpu -o requirements.txt && \
     uv venv /app/.venv && \
     uv pip sync requirements.txt --find-links https://download.pytorch.org/whl/cpu --python /app/.venv/bin/python
