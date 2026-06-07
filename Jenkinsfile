@@ -35,11 +35,10 @@ pipeline {
             steps {
                 echo 'Authenticating and pushing artifacts to Docker Hub...'
                 withCredentials([usernamePassword(credentialsId: "${REGISTRY_CREDS_ID}", usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin's
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
                     sh "docker push ${REGISTRY_USER}/${IMAGE_NAME}:${IMAGE_TAG}"
                     sh "docker push ${REGISTRY_USER}/${IMAGE_NAME}:latest"
                 }
-            }
         }
 
         stage('Workspace Cleanup') {
