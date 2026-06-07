@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    options {
+        timeout(time: 10, unit: 'MINUTES') 
+    }
+
     environment {
         REGISTRY_CREDS_ID = 'docker-token' 
         REGISTRY_USER     = 'thefool23'              
