@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
 
-COPY pyproject.toml ./
+COPY pyproject.toml uv.lock ./
 
-RUN uv pip compile pyproject.toml -o requirements.txt && \
+RUN uv pip compile pyproject.toml --upgrade -o requirements.txt && \
     uv venv /app/.venv && \
     uv pip sync requirements.txt --python /app/.venv/bin/python
 
