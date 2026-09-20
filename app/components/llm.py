@@ -14,7 +14,7 @@ def load_llm():
     try:
         if not GROQ_API_KEY:
             raise CustomException(
-                "Hugging Face API token is missing. Check your environment configuration."
+                "Groq API token is missing. Check your environment configuration."
             )
 
         logger.info(f"Initializing Groq Inference Core using model: {GROQ_LLM_MODEL}")
