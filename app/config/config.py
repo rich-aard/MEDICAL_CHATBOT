@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -7,7 +8,7 @@ load_dotenv()
 HF_TOKEN = os.environ.get("HF_TOKEN")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-GROQ_LLM_MODEL = "llama-3.3-70b-versatile"
+GROQ_LLM_MODEL = "openai/gpt-oss-120b"
 
 # Dynamic project paths
 BASE_DIR = Path(__file__).resolve().parent.parent.parent

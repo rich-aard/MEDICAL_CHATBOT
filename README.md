@@ -1,6 +1,6 @@
 # 🏥 Medical RAG Chatbot
 
-A **Retrieval-Augmented Generation (RAG)** chatbot for medical question answering, built with FastAPI, LangChain, FAISS, domain-specific PubMedBERT embeddings, and Llama 3.3 70B via Groq. The system retrieves semantically relevant chunks from a local medical knowledge base before generating grounded, context-aware answers.
+A **Retrieval-Augmented Generation (RAG)** chatbot for medical question answering, built with FastAPI, LangChain, FAISS, domain-specific PubMedBERT embeddings, and openai/gpt-oss-120b via Groq. The system retrieves semantically relevant chunks from a local medical knowledge base before generating grounded, context-aware answers.
 
 > ⚠️ **Disclaimer:** This project is for educational and research purposes only. It does not provide medical diagnosis, treatment recommendations, or professional healthcare advice. Always consult a qualified healthcare professional for medical decisions.
 
@@ -29,7 +29,7 @@ A **Retrieval-Augmented Generation (RAG)** chatbot for medical question answerin
 
 ## Overview
 
-The Medical RAG Chatbot ingests medical PDF documents, chunks and embeds them using a biomedical-domain language model, and indexes them in a local FAISS vector store. At query time, semantically similar chunks are retrieved and passed alongside the user's question to Llama 3.3 70B (served via Groq) to produce a concise, grounded answer.
+The Medical RAG Chatbot ingests medical PDF documents, chunks and embeds them using a biomedical-domain language model, and indexes them in a local FAISS vector store. At query time, semantically similar chunks are retrieved and passed alongside the user's question to openai/gpt-oss-120b (served via Groq) to produce a concise, grounded answer.
 
 Key design goals:
 - **Domain accuracy** — PubMedBERT embeddings are trained on biomedical literature, making retrieval significantly more precise than general-purpose models.
@@ -72,7 +72,7 @@ User Query ──► Semantic Retriever (top-k=3)
            │
            ▼
 ┌─────────────────────┐
-│  Groq LLM           │  llama-3.3-70b-versatile
+│  Groq LLM           │  openai/gpt-oss-120b
 └──────────┬──────────┘
            │
            ▼
@@ -156,7 +156,7 @@ MEDICAL_CHATBOT/
 
 **Step 5 — Retrieve.** At inference time, the user's query is embedded with the same model and the top-3 nearest chunks are returned.
 
-**Step 6 — Generate.** The retrieved chunks are injected into a LangChain prompt and sent to `llama-3.3-70b-versatile` on Groq. The model produces a concise, context-grounded answer that is streamed back to the UI.
+**Step 6 — Generate.** The retrieved chunks are injected into a LangChain prompt and sent to `openai/gpt-oss-120b` on Groq. The model produces a concise, context-grounded answer that is streamed back to the UI.
 
 ---
 
@@ -287,7 +287,7 @@ Key parameters live in `app/config/config.py`:
 | `CHUNK_SIZE` | `1000` | Token length of each document chunk |
 | `CHUNK_OVERLAP` | `200` | Overlap between consecutive chunks |
 | `EMBEDDING_MODEL` | `NeuML/pubmedbert-base-embeddings` | Sentence-transformer model for encoding |
-| `LLM_MODEL` | `llama-3.3-70b-versatile` | Groq model ID |
+| `LLM_MODEL` | `openai/gpt-oss-120b` | Groq model ID |
 | `TOP_K` | `3` | Number of chunks retrieved per query |
 | `VECTOR_STORE_PATH` | `data/vector_store/faiss_index/` | On-disk index location |
 
