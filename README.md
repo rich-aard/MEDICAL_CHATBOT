@@ -11,7 +11,6 @@ A **Retrieval-Augmented Generation (RAG)** chatbot for medical question answerin
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
-- [Knowledge Base](#knowledge-base)
 - [Project Structure](#project-structure)
 - [How It Works](#how-it-works)
 - [Getting Started](#getting-started)
